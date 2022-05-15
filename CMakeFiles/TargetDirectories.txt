@@ -1,0 +1,3 @@
+/Users/mrjavaheri/Desktop/smartChess/CMakeFiles/smartChess.dir
+/Users/mrjavaheri/Desktop/smartChess/CMakeFiles/edit_cache.dir
+/Users/mrjavaheri/Desktop/smartChess/CMakeFiles/rebuild_cache.dir
