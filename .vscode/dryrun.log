@@ -1,0 +1,23 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mrjavaheri/Desktop/smartChess'
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -S/Users/mrjavaheri/Desktop/smartChess -B/Users/mrjavaheri/Desktop/smartChess --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles /Users/mrjavaheri/Desktop/smartChess//CMakeFiles/progress.marks
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/Users/mrjavaheri/Desktop/smartChess'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/depend
+ 
+make[2]: Entering directory `/Users/mrjavaheri/Desktop/smartChess'
+cd /Users/mrjavaheri/Desktop/smartChess && /usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess/CMakeFiles/smartChess.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/Users/mrjavaheri/Desktop/smartChess'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/build
+make[2]: Entering directory `/Users/mrjavaheri/Desktop/smartChess'
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/smartChess.dir/src/main.cpp.o"
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mrjavaheri/Desktop/smartChess/include -isystem /usr/local/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -MD -MT CMakeFiles/smartChess.dir/src/main.cpp.o -MF CMakeFiles/smartChess.dir/src/main.cpp.o.d -o CMakeFiles/smartChess.dir/src/main.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/main.cpp
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=2 "Linking CXX executable smartChess"
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_link_script CMakeFiles/smartChess.dir/link.txt --verbose=
+make[2]: Leaving directory `/Users/mrjavaheri/Desktop/smartChess'
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_echo_color --switch= --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=1,2 "Built target smartChess"
+make[1]: Leaving directory `/Users/mrjavaheri/Desktop/smartChess'
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles 0
+make: Leaving directory `/Users/mrjavaheri/Desktop/smartChess'
+ 

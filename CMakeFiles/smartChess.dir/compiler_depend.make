@@ -415,14 +415,200 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /usr/local/include/SFML/Graphics.hpp \
+  /usr/local/include/SFML/Window.hpp \
+  /usr/local/include/SFML/System.hpp \
+  /usr/local/include/SFML/Config.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/TargetConditionals.h \
+  /usr/local/include/SFML/System/Clock.hpp \
+  /usr/local/include/SFML/System/Export.hpp \
+  /usr/local/include/SFML/System/Time.hpp \
+  /usr/local/include/SFML/System/Err.hpp \
+  /usr/local/include/SFML/System/FileInputStream.hpp \
+  /usr/local/include/SFML/System/InputStream.hpp \
+  /usr/local/include/SFML/System/NonCopyable.hpp \
+  /usr/local/include/SFML/System/Lock.hpp \
+  /usr/local/include/SFML/System/MemoryInputStream.hpp \
+  /usr/local/include/SFML/System/Mutex.hpp \
+  /usr/local/include/SFML/System/Sleep.hpp \
+  /usr/local/include/SFML/System/String.hpp \
+  /usr/local/include/SFML/System/Utf.hpp \
+  /usr/local/include/SFML/System/Utf.inl \
+  /usr/local/include/SFML/System/String.inl \
+  /usr/local/include/SFML/System/Thread.hpp \
+  /usr/local/include/SFML/System/Thread.inl \
+  /usr/local/include/SFML/System/ThreadLocal.hpp \
+  /usr/local/include/SFML/System/ThreadLocalPtr.hpp \
+  /usr/local/include/SFML/System/ThreadLocalPtr.inl \
+  /usr/local/include/SFML/System/Vector2.hpp \
+  /usr/local/include/SFML/System/Vector2.inl \
+  /usr/local/include/SFML/System/Vector3.hpp \
+  /usr/local/include/SFML/System/Vector3.inl \
+  /usr/local/include/SFML/Window/Clipboard.hpp \
+  /usr/local/include/SFML/Window/Export.hpp \
+  /usr/local/include/SFML/Window/Context.hpp \
+  /usr/local/include/SFML/Window/GlResource.hpp \
+  /usr/local/include/SFML/Window/ContextSettings.hpp \
+  /usr/local/include/SFML/Window/Cursor.hpp \
+  /usr/local/include/SFML/Window/Event.hpp \
+  /usr/local/include/SFML/Window/Joystick.hpp \
+  /usr/local/include/SFML/Window/Keyboard.hpp \
+  /usr/local/include/SFML/Window/Mouse.hpp \
+  /usr/local/include/SFML/Window/Sensor.hpp \
+  /usr/local/include/SFML/Window/Touch.hpp \
+  /usr/local/include/SFML/Window/VideoMode.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
+  /usr/local/include/SFML/Window/Window.hpp \
+  /usr/local/include/SFML/Window/WindowHandle.hpp \
+  /usr/local/include/SFML/Window/WindowStyle.hpp \
+  /usr/local/include/SFML/Graphics/BlendMode.hpp \
+  /usr/local/include/SFML/Graphics/Export.hpp \
+  /usr/local/include/SFML/Graphics/CircleShape.hpp \
+  /usr/local/include/SFML/Graphics/Shape.hpp \
+  /usr/local/include/SFML/Graphics/Drawable.hpp \
+  /usr/local/include/SFML/Graphics/RenderStates.hpp \
+  /usr/local/include/SFML/Graphics/Transform.hpp \
+  /usr/local/include/SFML/Graphics/Rect.hpp \
+  /usr/local/include/SFML/Graphics/Rect.inl \
+  /usr/local/include/SFML/Graphics/Transformable.hpp \
+  /usr/local/include/SFML/Graphics/VertexArray.hpp \
+  /usr/local/include/SFML/Graphics/Vertex.hpp \
+  /usr/local/include/SFML/Graphics/Color.hpp \
+  /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
+  /usr/local/include/SFML/Graphics/ConvexShape.hpp \
+  /usr/local/include/SFML/Graphics/Font.hpp \
+  /usr/local/include/SFML/Graphics/Glyph.hpp \
+  /usr/local/include/SFML/Graphics/Texture.hpp \
+  /usr/local/include/SFML/Graphics/Image.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tree \
+  /usr/local/include/SFML/Graphics/RectangleShape.hpp \
+  /usr/local/include/SFML/Graphics/RenderTarget.hpp \
+  /usr/local/include/SFML/Graphics/View.hpp \
+  /usr/local/include/SFML/Graphics/RenderTexture.hpp \
+  /usr/local/include/SFML/Graphics/RenderWindow.hpp \
+  /usr/local/include/SFML/Graphics/Shader.hpp \
+  /usr/local/include/SFML/Graphics/Glsl.hpp \
+  /usr/local/include/SFML/Graphics/Glsl.inl \
+  /usr/local/include/SFML/Graphics/Sprite.hpp \
+  /usr/local/include/SFML/Graphics/Text.hpp \
+  /usr/local/include/SFML/Graphics/VertexBuffer.hpp
 
+
+/usr/local/include/SFML/Graphics/VertexBuffer.hpp:
+
+/usr/local/include/SFML/Graphics/Glsl.hpp:
+
+/usr/local/include/SFML/Graphics/RenderTexture.hpp:
+
+/usr/local/include/SFML/Graphics/View.hpp:
+
+/usr/local/include/SFML/Graphics/RectangleShape.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tree:
+
+/usr/local/include/SFML/Graphics/Texture.hpp:
+
+/usr/local/include/SFML/Graphics/Glyph.hpp:
+
+/usr/local/include/SFML/Graphics/Font.hpp:
+
+/usr/local/include/SFML/Graphics/ConvexShape.hpp:
+
+/usr/local/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/local/include/SFML/Graphics/VertexArray.hpp:
+
+/usr/local/include/SFML/Graphics/Transformable.hpp:
+
+/usr/local/include/SFML/Graphics/Rect.hpp:
+
+/usr/local/include/SFML/Graphics/RenderStates.hpp:
+
+/usr/local/include/SFML/Graphics/Shape.hpp:
+
+/usr/local/include/SFML/Graphics/RenderTarget.hpp:
+
+/usr/local/include/SFML/Graphics/BlendMode.hpp:
+
+/usr/local/include/SFML/Window/WindowHandle.hpp:
+
+/usr/local/include/SFML/Graphics/RenderWindow.hpp:
+
+/usr/local/include/SFML/Window/Window.hpp:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer:
+
+/usr/local/include/SFML/Window/Touch.hpp:
+
+/usr/local/include/SFML/Window/Sensor.hpp:
+
+/usr/local/include/SFML/Window/Mouse.hpp:
+
+/usr/local/include/SFML/Window/Joystick.hpp:
+
+/usr/local/include/SFML/Window/Cursor.hpp:
+
+/usr/local/include/SFML/Window/GlResource.hpp:
+
+/usr/local/include/SFML/Window/Context.hpp:
+
+/usr/local/include/SFML/Window/Export.hpp:
+
+/usr/local/include/SFML/System/Vector3.inl:
+
+/usr/local/include/SFML/System/Vector3.hpp:
+
+/usr/local/include/SFML/System/Vector2.inl:
+
+/usr/local/include/SFML/System/Vector2.hpp:
+
+/usr/local/include/SFML/Graphics/Glsl.inl:
+
+/usr/local/include/SFML/System/ThreadLocalPtr.inl:
+
+/usr/local/include/SFML/System/ThreadLocal.hpp:
+
+/usr/local/include/SFML/System/Thread.inl:
+
+/usr/local/include/SFML/System/Utf.inl:
+
+/usr/local/include/SFML/System/Utf.hpp:
+
+/usr/local/include/SFML/System/Mutex.hpp:
+
+/usr/local/include/SFML/System/Lock.hpp:
+
+/usr/local/include/SFML/System/NonCopyable.hpp:
+
+/usr/local/include/SFML/System/FileInputStream.hpp:
+
+/usr/local/include/SFML/System/Clock.hpp:
+
+/usr/local/include/SFML/Config.hpp:
+
+/usr/local/include/SFML/System/ThreadLocalPtr.hpp:
+
+/usr/local/include/SFML/Window.hpp:
+
+/usr/local/include/SFML/Graphics/Sprite.hpp:
+
+/usr/local/include/SFML/Graphics.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
+/usr/local/include/SFML/System/Thread.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fd_isset.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/TargetConditionals.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fd_clr.h:
 
@@ -432,7 +618,11 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_useconds_t.h:
 
+/usr/local/include/SFML/Window/WindowStyle.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_nlink_t.h:
+
+/usr/local/include/SFML/System/MemoryInputStream.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_key_t.h:
 
@@ -443,6 +633,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_blksize_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_char.h:
+
+/usr/local/include/SFML/Graphics/Text.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/pthread.h:
 
@@ -455,6 +647,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bit_reference:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/bitset:
+
+/usr/local/include/SFML/Graphics/CircleShape.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
@@ -510,13 +704,19 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
+/usr/local/include/SFML/System/String.inl:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
+
+/usr/local/include/SFML/Graphics/Color.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/partition.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
 
@@ -612,6 +812,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
 
+/usr/local/include/SFML/System/Err.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/shift_right.h:
@@ -665,6 +867,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/empty.h:
+
+/usr/local/include/SFML/Graphics/Image.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/distance.h:
 
@@ -724,7 +928,11 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_caddr_t.h:
 
+/usr/local/include/SFML/System/InputStream.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
 
@@ -758,6 +966,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
 
+/usr/local/include/SFML/Graphics/Drawable.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
@@ -778,6 +988,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/unique_ptr.h:
 
+/usr/local/include/SFML/Window/Event.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iosfwd:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mbstate_t.h:
@@ -793,6 +1005,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/bind_front.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/hash.h:
 
@@ -821,6 +1035,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/comp.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/search.h:
+
+/usr/local/include/SFML/System/String.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional:
 
@@ -864,6 +1080,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
 
+/usr/local/include/SFML/Window/Keyboard.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/in_place.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/typeinfo:
@@ -890,6 +1108,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdint:
 
+/usr/local/include/SFML/Graphics/Transform.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
@@ -899,6 +1119,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/syslimits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_mode_t.h:
+
+/usr/local/include/SFML/Graphics/Rect.inl:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
@@ -919,6 +1141,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_fd_copy.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/is_transparent.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h:
 
@@ -950,6 +1174,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stdint.h:
 
+/usr/local/include/SFML/System/Export.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdio:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/qos.h:
@@ -968,6 +1194,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigaltstack.h:
 
+/usr/local/include/SFML/System.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/mach/machine/_structs.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h:
@@ -981,6 +1209,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__debug:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_locale.h:
+
+/usr/local/include/SFML/Window/ContextSettings.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
@@ -997,6 +1227,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/strings.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/move.h:
+
+/usr/local/include/SFML/Graphics/Shader.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/sample.h:
 
@@ -1015,6 +1247,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/errno.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
+
+/usr/local/include/SFML/Graphics/Vertex.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h:
 
@@ -1076,6 +1310,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional_base:
 
+/usr/local/include/SFML/System/Time.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timespec.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/mutex:
@@ -1106,6 +1342,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/climits:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/map:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_off_t.h:
@@ -1131,6 +1369,8 @@ CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__utility/pair.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__ranges/enable_view.h:
+
+/usr/local/include/SFML/Window/VideoMode.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_wctype.h:
 
@@ -1178,9 +1418,13 @@ src/main.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/initializer_list:
 
+/usr/local/include/SFML/Graphics/Export.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/identity.h:
+
+/usr/local/include/SFML/System/Sleep.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h:
 
@@ -1217,6 +1461,8 @@ src/main.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
+
+/usr/local/include/SFML/Window/Clipboard.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
 
