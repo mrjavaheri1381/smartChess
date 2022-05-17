@@ -1,6 +1,7 @@
 #include "Board.h"
-
 using namespace std;
+map<string, sf::Texture> textures;
+
 
 Board::Board(string brd[8][8]){
     pieCount[0]=pieCount[1]=0;
@@ -236,4 +237,18 @@ bool Board::isCheckmate(int color){
   for(int i=0;i<pieCount[color];i++)
     if(getValidMoves(Pies[color][i]).size()!=0)return false;
   return true;
+}
+
+void Board::loadTextures(){
+  for(int i=0;i<8;i++)
+    for(int j=0;j<8;j++){
+      if(board[i][j]!="--"){
+        if(textures.find(board[i][j])==textures.end()){
+          textures[board[i][j]].loadFromFile(getPath(board[i][j]));
+        }
+      }
+    }
+}
+void Board::draw(sf::RenderWindow *window){
+  
 }
