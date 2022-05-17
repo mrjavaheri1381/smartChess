@@ -1,3 +1,3 @@
 #pragma once
 
-bool isValidPos(int x,int y)
+bool isValidPos(int x,int y);

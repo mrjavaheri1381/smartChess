@@ -1,5 +1,6 @@
 #pragma once
 #include "Pieces.h"
+#include <SFML/Graphics.hpp>
 using namespace std;
 class Board
 {
