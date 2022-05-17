@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/Users/mrjavaheri/Desktop/smartChess/build",
+  "command": "/usr/bin/clang++  -I/Users/mrjavaheri/Desktop/smartChess/include -isystem /usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/smartChess.dir/src/main.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/main.cpp",
+  "file": "/Users/mrjavaheri/Desktop/smartChess/src/main.cpp"
+},
+{
+  "directory": "/Users/mrjavaheri/Desktop/smartChess/build",
+  "command": "/usr/bin/clang++  -I/Users/mrjavaheri/Desktop/smartChess/include -isystem /usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/smartChess.dir/src/basePiece.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp",
+  "file": "/Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp"
+},
+{
+  "directory": "/Users/mrjavaheri/Desktop/smartChess/build",
+  "command": "/usr/bin/clang++  -I/Users/mrjavaheri/Desktop/smartChess/include -isystem /usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/smartChess.dir/src/Pieces.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp",
+  "file": "/Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp"
+},
+{
+  "directory": "/Users/mrjavaheri/Desktop/smartChess/build",
+  "command": "/usr/bin/clang++  -I/Users/mrjavaheri/Desktop/smartChess/include -isystem /usr/local/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/smartChess.dir/src/Board.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp",
+  "file": "/Users/mrjavaheri/Desktop/smartChess/src/Board.cpp"
+}
+]

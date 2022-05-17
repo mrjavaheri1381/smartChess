@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/mrjavaheri/Desktop/smartChess
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrjavaheri/Desktop/smartChess
+CMAKE_BINARY_DIR = /Users/mrjavaheri/Desktop/smartChess/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/smartChess.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/smartChess.dir/progress.make
 include CMakeFiles/smartChess.dir/flags.make
 
 CMakeFiles/smartChess.dir/src/main.cpp.o: CMakeFiles/smartChess.dir/flags.make
-CMakeFiles/smartChess.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/smartChess.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/smartChess.dir/src/main.cpp.o: CMakeFiles/smartChess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smartChess.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/main.cpp.o -MF CMakeFiles/smartChess.dir/src/main.cpp.o.d -o CMakeFiles/smartChess.dir/src/main.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smartChess.dir/src/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/main.cpp.o -MF CMakeFiles/smartChess.dir/src/main.cpp.o.d -o CMakeFiles/smartChess.dir/src/main.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/main.cpp
 
 CMakeFiles/smartChess.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartChess.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/main.cpp > CMakeFiles/smartChess.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/main.cpp > CMakeFiles/smartChess.dir/src/main.cpp.i
 
 CMakeFiles/smartChess.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartChess.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/main.cpp -o CMakeFiles/smartChess.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/main.cpp -o CMakeFiles/smartChess.dir/src/main.cpp.s
 
 CMakeFiles/smartChess.dir/src/basePiece.cpp.o: CMakeFiles/smartChess.dir/flags.make
-CMakeFiles/smartChess.dir/src/basePiece.cpp.o: src/basePiece.cpp
+CMakeFiles/smartChess.dir/src/basePiece.cpp.o: ../src/basePiece.cpp
 CMakeFiles/smartChess.dir/src/basePiece.cpp.o: CMakeFiles/smartChess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smartChess.dir/src/basePiece.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/basePiece.cpp.o -MF CMakeFiles/smartChess.dir/src/basePiece.cpp.o.d -o CMakeFiles/smartChess.dir/src/basePiece.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smartChess.dir/src/basePiece.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/basePiece.cpp.o -MF CMakeFiles/smartChess.dir/src/basePiece.cpp.o.d -o CMakeFiles/smartChess.dir/src/basePiece.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp
 
 CMakeFiles/smartChess.dir/src/basePiece.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartChess.dir/src/basePiece.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp > CMakeFiles/smartChess.dir/src/basePiece.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp > CMakeFiles/smartChess.dir/src/basePiece.cpp.i
 
 CMakeFiles/smartChess.dir/src/basePiece.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartChess.dir/src/basePiece.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp -o CMakeFiles/smartChess.dir/src/basePiece.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp -o CMakeFiles/smartChess.dir/src/basePiece.cpp.s
 
 CMakeFiles/smartChess.dir/src/Pieces.cpp.o: CMakeFiles/smartChess.dir/flags.make
-CMakeFiles/smartChess.dir/src/Pieces.cpp.o: src/Pieces.cpp
+CMakeFiles/smartChess.dir/src/Pieces.cpp.o: ../src/Pieces.cpp
 CMakeFiles/smartChess.dir/src/Pieces.cpp.o: CMakeFiles/smartChess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/smartChess.dir/src/Pieces.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/Pieces.cpp.o -MF CMakeFiles/smartChess.dir/src/Pieces.cpp.o.d -o CMakeFiles/smartChess.dir/src/Pieces.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/smartChess.dir/src/Pieces.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/Pieces.cpp.o -MF CMakeFiles/smartChess.dir/src/Pieces.cpp.o.d -o CMakeFiles/smartChess.dir/src/Pieces.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp
 
 CMakeFiles/smartChess.dir/src/Pieces.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartChess.dir/src/Pieces.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp > CMakeFiles/smartChess.dir/src/Pieces.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp > CMakeFiles/smartChess.dir/src/Pieces.cpp.i
 
 CMakeFiles/smartChess.dir/src/Pieces.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartChess.dir/src/Pieces.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp -o CMakeFiles/smartChess.dir/src/Pieces.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp -o CMakeFiles/smartChess.dir/src/Pieces.cpp.s
 
 CMakeFiles/smartChess.dir/src/Board.cpp.o: CMakeFiles/smartChess.dir/flags.make
-CMakeFiles/smartChess.dir/src/Board.cpp.o: src/Board.cpp
+CMakeFiles/smartChess.dir/src/Board.cpp.o: ../src/Board.cpp
 CMakeFiles/smartChess.dir/src/Board.cpp.o: CMakeFiles/smartChess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/smartChess.dir/src/Board.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/Board.cpp.o -MF CMakeFiles/smartChess.dir/src/Board.cpp.o.d -o CMakeFiles/smartChess.dir/src/Board.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/smartChess.dir/src/Board.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smartChess.dir/src/Board.cpp.o -MF CMakeFiles/smartChess.dir/src/Board.cpp.o.d -o CMakeFiles/smartChess.dir/src/Board.cpp.o -c /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp
 
 CMakeFiles/smartChess.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartChess.dir/src/Board.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp > CMakeFiles/smartChess.dir/src/Board.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp > CMakeFiles/smartChess.dir/src/Board.cpp.i
 
 CMakeFiles/smartChess.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartChess.dir/src/Board.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp -o CMakeFiles/smartChess.dir/src/Board.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrjavaheri/Desktop/smartChess/src/Board.cpp -o CMakeFiles/smartChess.dir/src/Board.cpp.s
 
 # Object files for target smartChess
 smartChess_OBJECTS = \
@@ -144,7 +144,7 @@ smartChess: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 smartChess: /usr/local/lib/libsfml-window.2.5.1.dylib
 smartChess: /usr/local/lib/libsfml-system.2.5.1.dylib
 smartChess: CMakeFiles/smartChess.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable smartChess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable smartChess"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smartChess.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +156,6 @@ CMakeFiles/smartChess.dir/clean:
 .PHONY : CMakeFiles/smartChess.dir/clean
 
 CMakeFiles/smartChess.dir/depend:
-	cd /Users/mrjavaheri/Desktop/smartChess && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess/CMakeFiles/smartChess.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mrjavaheri/Desktop/smartChess/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess /Users/mrjavaheri/Desktop/smartChess/build /Users/mrjavaheri/Desktop/smartChess/build /Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles/smartChess.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/smartChess.dir/depend
 

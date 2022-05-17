@@ -3,5 +3,6 @@
     "vector": "cpp",
     "iosfwd": "cpp",
     "iterator": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }

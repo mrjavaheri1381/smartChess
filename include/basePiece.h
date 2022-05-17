@@ -1,3 +1,4 @@
+#pragma once
 #include "data.h"
 using namespace std;
 class BasePies{
@@ -6,13 +7,13 @@ class BasePies{
         int number,color;
         string name;
         Pos pos;
-        BasePies(int , int ,int ,char);
-        bool isClearHorizontal(string ,Pos );
-        bool isClearVertical(string ,Pos );
-        bool isClearDiagonal(string ,Pos );
-        vector<Move> getDiagonalMoves(string );
-        vector<Move> getVerticalMoves(string );
-        vector<Move> getHorizontalMoves(string );
-        virtual bool isValidMove(string ,Pos );
-        virtual vector<Move> getMoves(string );
+        BasePies(int x=-1 , int y=-1 ,int color=0 ,char type='-');
+        bool isClearHorizontal(string[8][8] ,Pos );
+        bool isClearVertical(string[8][8] ,Pos );
+        bool isClearDiagonal(string[8][8] ,Pos );
+        vector<Move> getDiagonalMoves(string[8][8] );
+        vector<Move> getVerticalMoves(string[8][8] );
+        vector<Move> getHorizontalMoves(string[8][8] );
+        virtual bool isValidMove(string[8][8] ,Pos );
+        virtual vector<Move> getMoves(string[8][8] );
 };

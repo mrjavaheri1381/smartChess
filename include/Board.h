@@ -1,4 +1,6 @@
 #include "basePiece.h"
+#if !defined(BOARD)
+#define BOARD
 using namespace std;
 class Board
 {
@@ -22,3 +24,5 @@ class Board
     bool isInCheck(int color);
     bool isCheckmate(int color);
 };
+
+#endif // BOARD

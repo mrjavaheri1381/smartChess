@@ -7,6 +7,9 @@ set(SRC_DIRECTORY src)
 set(INCLUDE_DIRECTORY include)
 
 set(SOURCES
+    ${SRC_DIRECTORY}/basePiece.cpp
+    ${SRC_DIRECTORY}/Pieces.cpp
+    ${SRC_DIRECTORY}/Board.cpp
 )
 
 include_directories(${INCLUDE_DIRECTORY})

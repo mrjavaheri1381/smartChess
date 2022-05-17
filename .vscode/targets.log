@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Mon May 16 22:54:24 2022
+# Make data base, printed on Tue May 17 18:27:51 2022
 
 # Variables
 
@@ -45,7 +44,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # makefile (from `Makefile', line 35)
 MAKESILENT = -s
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/qb/n4ffbm1s6l57lh6jr43g68zm0000gn/T/vscode-ipc-c356c73a-0482-4e02-81fe-6ad8cb76e21d.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/qb/n4ffbm1s6l57lh6jr43g68zm0000gn/T/vscode-ipc-c5853742-ecda-4e9c-ae5a-b053f8421ea1.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -161,7 +160,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 56239
+VSCODE_PID = 78713
 # variable set hash-table stats:
 # Load=75/1024=7%, Rehash=0, Collisions=3/107=3%
 
@@ -172,10 +171,10 @@ VSCODE_PID = 56239
 # Directories
 
 # SCCS: could not be stat'd.
-# . (device 16777221, inode 18313867): 16 files, no impossibilities.
+# . (device 16777221, inode 18313867): 17 files, no impossibilities.
 # RCS: could not be stat'd.
 
-# 16 files, no impossibilities in 3 directories.
+# 17 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -195,11 +194,41 @@ VSCODE_PID = 56239
 
 # Files
 
+src/Board.i: src/Board.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Pieces.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 169):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Pieces.cpp.i
+	
+
+src/Board.o: src/Board.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
 cmake_force:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+
+src/Pieces.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 161):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Pieces.cpp.o
+	
 
 edit_cache:
 #  Phony target (prerequisite of .PHONY).
@@ -225,7 +254,7 @@ src/main.cpp.s:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 153):
+#  commands to execute (from `Makefile', line 225):
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/main.cpp.s
 	
 
@@ -241,10 +270,11 @@ all: cmake_check_build_system
 #  commands to execute (from `Makefile', line 90):
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles /Users/mrjavaheri/Desktop/smartChess//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+ 
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles 0
 	
 
-.PHONY: default_target cmake_force edit_cache edit_cache/fast rebuild_cache rebuild_cache/fast all clean clean/fast preinstall preinstall/fast depend smartChess smartChess/fast src/main.o src/main.cpp.o src/main.i src/main.cpp.i src/main.s src/main.cpp.s help cmake_check_build_system
+.PHONY: default_target cmake_force edit_cache edit_cache/fast rebuild_cache rebuild_cache/fast all clean clean/fast preinstall preinstall/fast depend smartChess smartChess/fast src/Board.o src/Board.cpp.o src/Board.i src/Board.cpp.i src/Board.s src/Board.cpp.s src/Pieces.o src/Pieces.cpp.o src/Pieces.i src/Pieces.cpp.i src/Pieces.s src/Pieces.cpp.s src/basePiece.o src/basePiece.cpp.o src/basePiece.i src/basePiece.cpp.i src/basePiece.s src/basePiece.cpp.s src/main.o src/main.cpp.o src/main.i src/main.cpp.i src/main.s src/main.cpp.s help cmake_check_build_system
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -278,8 +308,7 @@ preinstall/fast:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-05-15 23:46:53
+#  Last modified 2022-05-17 17:45:06
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -289,6 +318,30 @@ Makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+src/basePiece.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 201):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/basePiece.cpp.s
+	
+
+src/Board.s: src/Board.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Pieces.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 177):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Pieces.cpp.s
+	
 
 clean/fast: clean
 #  Phony target (prerequisite of .PHONY).
@@ -321,16 +374,40 @@ cmake_check_build_system:
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/13=23%
-#  commands to execute (from `Makefile', line 179):
+#  commands to execute (from `Makefile', line 260):
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 	
+
+src/basePiece.i: src/basePiece.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/basePiece.o: src/basePiece.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Pieces.i: src/Pieces.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Pieces.o: src/Pieces.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
 
 help:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 158):
+#  commands to execute (from `Makefile', line 230):
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
@@ -338,6 +415,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... smartChess"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
+	@echo "... src/Pieces.o"
+	@echo "... src/Pieces.i"
+	@echo "... src/Pieces.s"
+	@echo "... src/basePiece.o"
+	@echo "... src/basePiece.i"
+	@echo "... src/basePiece.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -372,11 +458,38 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 	
 
+src/Board.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 145):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Board.cpp.i
+	
+
+src/Board.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 137):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Board.cpp.o
+	
+
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+src/basePiece.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 185):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/basePiece.cpp.o
+	
 
 default_target: all
 #  Phony target (prerequisite of .PHONY).
@@ -410,7 +523,7 @@ src/main.cpp.i:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 145):
+#  commands to execute (from `Makefile', line 217):
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/main.cpp.i
 	
 
@@ -419,7 +532,8 @@ src/main.cpp.o:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 137):
+ 
+#  commands to execute (from `Makefile', line 209):
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/main.cpp.o
 	
 
@@ -432,11 +546,41 @@ smartChess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/build
 	
 
+src/basePiece.s: src/basePiece.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Pieces.s: src/Pieces.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
 # Not a target:
 .hpux_make_needs_suffix_list:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+src/Board.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 153):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Board.cpp.s
+	
+
+src/basePiece.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 193):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/basePiece.cpp.i
+	
 
 rebuild_cache:
 #  Phony target (prerequisite of .PHONY).
@@ -449,7 +593,7 @@ rebuild_cache:
 	
 
 # files hash-table stats:
-# Load=29/1024=3%, Rehash=0, Collisions=3/99=3%
+# Load=47/1024=5%, Rehash=0, Collisions=7/162=4%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -461,6 +605,6 @@ rebuild_cache:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon May 16 22:54:24 2022
+# Finished Make data base on Tue May 17 18:27:51 2022
 
  

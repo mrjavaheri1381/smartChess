@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/mrjavaheri/Desktop/smartChess
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrjavaheri/Desktop/smartChess
+CMAKE_BINARY_DIR = /Users/mrjavaheri/Desktop/smartChess/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/smartChess.dir/clean
 CMakeFiles/smartChess.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mrjavaheri/Desktop/smartChess/CMakeFiles --progress-num=1,2,3,4,5 "Built target smartChess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target smartChess"
 .PHONY : CMakeFiles/smartChess.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/smartChess.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/smartChess.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrjavaheri/Desktop/smartChess/build/CMakeFiles 0
 .PHONY : CMakeFiles/smartChess.dir/rule
 
 # Convenience name for target.
