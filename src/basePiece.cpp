@@ -1,4 +1,5 @@
 #include "basePiece.h"
+
 BasePies::BasePies(int x, int y,int color,char type) {
     pos.x = x;
     pos.y = y;

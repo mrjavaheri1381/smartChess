@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smartChess.dir/src/Board.cpp.o"
   "CMakeFiles/smartChess.dir/src/Board.cpp.o.d"
+  "CMakeFiles/smartChess.dir/src/Helper.cpp.o"
+  "CMakeFiles/smartChess.dir/src/Helper.cpp.o.d"
   "CMakeFiles/smartChess.dir/src/Pieces.cpp.o"
   "CMakeFiles/smartChess.dir/src/Pieces.cpp.o.d"
   "CMakeFiles/smartChess.dir/src/basePiece.cpp.o"

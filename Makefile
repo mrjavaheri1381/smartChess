@@ -153,6 +153,30 @@ src/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
+src/Helper.o: src/Helper.cpp.o
+.PHONY : src/Helper.o
+
+# target to build an object file
+src/Helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Helper.cpp.o
+.PHONY : src/Helper.cpp.o
+
+src/Helper.i: src/Helper.cpp.i
+.PHONY : src/Helper.i
+
+# target to preprocess a source file
+src/Helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Helper.cpp.i
+.PHONY : src/Helper.cpp.i
+
+src/Helper.s: src/Helper.cpp.s
+.PHONY : src/Helper.s
+
+# target to generate assembly for a file
+src/Helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Helper.cpp.s
+.PHONY : src/Helper.cpp.s
+
 src/Pieces.o: src/Pieces.cpp.o
 .PHONY : src/Pieces.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
+	@echo "... src/Helper.o"
+	@echo "... src/Helper.i"
+	@echo "... src/Helper.s"
 	@echo "... src/Pieces.o"
 	@echo "... src/Pieces.i"
 	@echo "... src/Pieces.s"

@@ -1,5 +1,6 @@
 #pragma once
 #include "data.h"
+#include "Helper.h"
 using namespace std;
 class BasePies{
     public:

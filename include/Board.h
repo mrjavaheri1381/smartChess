@@ -1,6 +1,5 @@
-#include "basePiece.h"
-#if !defined(BOARD)
-#define BOARD
+#pragma once
+#include "Pieces.h"
 using namespace std;
 class Board
 {
@@ -9,7 +8,7 @@ class Board
     string board[8][8];
     BasePies *Pies[2][16];
     vector<Action> Actions;
-    Board();
+    Board(string brd[8][8]);
     bool dMode(int color,int step=1);
     bool mMode(int color,int step=1);
     void addPie(BasePies *pie);
@@ -24,5 +23,3 @@ class Board
     bool isInCheck(int color);
     bool isCheckmate(int color);
 };
-
-#endif // BOARD

@@ -120,7 +120,5 @@ vector<Move> Rook::getMoves(string board[8][8]){
     vector<Move> res=getVerticalMoves(board),horizontal;
     horizontal=getHorizontalMoves(board);
     res.insert(res.end(),horizontal.begin(),horizontal.end());
-    // concat two vectors
-    
     return res;
 }
