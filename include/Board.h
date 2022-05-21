@@ -12,7 +12,7 @@ class Board
     BasePies *selectedPiece;
     vector<Action> Actions;
     vector<Move> avMoves;
-    Board(string brd[8][8]);
+    Board(const string brd[8][8]);
     bool dMode(int color,int step=1);
     bool mMode(int color,int step=1);
     void addPie(BasePies *pie);

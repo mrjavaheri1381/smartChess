@@ -2,38 +2,37 @@
 using namespace std;
 map<string, sf::Texture> textures;
 
-
-Board::Board(string brd[8][8]){
-    pieCount[0]=pieCount[1]=0;
-    for(int i=0;i<8;i++)
-      for(int j=0;j<8;j++)
-          board[i][j]=brd[i][j];
-    char temp[2],color='W';
-    BasePies *tempPie=new BasePies();
-    for(int i=0;i<8;i++){
-        for(int j=0;j<8;j++){
-          temp[0]=board[i][j][0];
-          temp[1]=board[i][j][1];
-          if(temp[1]=='W')color=0;
-          else if(temp[1]=='B')color=1;
-          else color=-1;
-          if(temp[0]=='K')
-            tempPie=new King(i,j,color);
-          else if(temp[0]=='Q')
-            tempPie=new Queen(i,j,color);
-          else if(temp[0]=='P')
-            tempPie=new Pawn(i,j,color);
-          else if(temp[0]=='B')
-            tempPie=new Bishop(i,j,color);
-          else if(temp[0]=='R')
-            tempPie=new Rook(i,j,color);
-          else if(temp[0]=='N')
-            tempPie=new Knight(i,j,color);
-          tempPie->name=temp;
-            addPie(tempPie);
-            tempPie=new BasePies();
-        }}
+Board::Board(const string brd[8][8]){
+  pieCount[0]=pieCount[1]=0;
+  for(int i=0;i<8;i++)
+    for(int j=0;j<8;j++)
+        board[i][j]=brd[i][j];
+  char temp[2],color='W';
+  BasePies *tempPie=new BasePies();
+  for(int i=0;i<8;i++)
+    for(int j=0;j<8;j++){
+      temp[0]=board[i][j][0];
+      temp[1]=board[i][j][1];
+      if(temp[1]=='W')color=0;
+      else if(temp[1]=='B')color=1;
+      else color=-1;
+      if(temp[0]=='K')
+        tempPie=new King(i,j,color);
+      else if(temp[0]=='Q')
+        tempPie=new Queen(i,j,color);
+      else if(temp[0]=='P')
+        tempPie=new Pawn(i,j,color);
+      else if(temp[0]=='B')
+        tempPie=new Bishop(i,j,color);
+      else if(temp[0]=='R')
+        tempPie=new Rook(i,j,color);
+      else if(temp[0]=='N')
+        tempPie=new Knight(i,j,color);
+      tempPie->name=temp;
+        addPie(tempPie);
+        tempPie=new BasePies();
     }
+}
 bool Board::dMode(int color,int step){
     if(isCheckmate(color))return true;
     bool res=true;
@@ -241,14 +240,31 @@ bool Board::isCheckmate(int color){
 
 void Board::loadTextures(){
   for(int i=0;i<8;i++)
-    for(int j=0;j<8;j++){
-      if(board[i][j]!="--"){
-        if(textures.find(board[i][j])==textures.end()){
+    for(int j=0;j<8;j++)
+      if(board[i][j]!="--")
+        if(textures.find(board[i][j])==textures.end())
           textures[board[i][j]].loadFromFile(getPath(board[i][j]));
-        }
+}
+using namespace sf;
+void Board::draw(sf::RenderWindow *window){
+  sf::Sprite piece;
+  CircleShape Circle(20);
+  window->draw(Circle);
+  for(int i=0;i<8;i++){
+      for(int j=0;j<8;j++){
+          if(board[j][i]!="--"){
+              Texture pie;
+              cout<<board[i][j]<<endl;
+              pie.loadFromFile(getPath(board[i][j]));
+              piece.setTexture(pie);
+              piece.setScale(0.2,0.1);
+              // piece.setTexture(textures[board[j][i]]);
+              if(board[j][i][0]!='P')
+                  piece.setPosition(80+i*135,80+j*135);
+              else
+                  piece.setPosition(95+i*135,80+j*135);
+              window->draw(piece);
+          }
       }
     }
-}
-void Board::draw(sf::RenderWindow *window){
-  
 }
