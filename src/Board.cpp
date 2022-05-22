@@ -2,7 +2,8 @@
 using namespace std;
 map<string, sf::Texture> textures;
 
-Board::Board(const string brd[8][8]){
+Board::Board(const string brd[8][8],sf::RenderWindow *_window){
+  window=_window;
   pieCount[0]=pieCount[1]=0;
   for(int i=0;i<8;i++)
     for(int j=0;j<8;j++)
@@ -246,7 +247,7 @@ void Board::loadTextures(){
           textures[board[i][j]].loadFromFile(getPath(board[i][j]));
 }
 using namespace sf;
-void Board::draw(sf::RenderWindow *window){
+void Board::draw(){
   sf::Sprite piece;
   CircleShape Circle(20);
   window->draw(Circle);
@@ -258,7 +259,7 @@ void Board::draw(sf::RenderWindow *window){
               pie.loadFromFile(getPath(board[i][j]));
               piece.setTexture(pie);
               piece.setScale(0.2,0.1);
-              // piece.setTexture(textures[board[j][i]]);
+              piece.setTexture(textures[board[j][i]]);
               if(board[j][i][0]!='P')
                   piece.setPosition(80+i*135,80+j*135);
               else
@@ -266,5 +267,28 @@ void Board::draw(sf::RenderWindow *window){
               window->draw(piece);
           }
       }
+    }
+}
+void Board::run(){
+  loadTextures();
+
+    sf::Sprite sp;
+    sf::Texture tx;
+    tx.loadFromFile("resources/images/board.png");
+    sp.setTexture(tx);
+    sp.setScale(1.6,1.6);
+    while (this->window->isOpen()) {
+        sf::Event event;
+        while (this->window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                this->window->close();
+            }
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+                cout<<sf::Mouse::getPosition(*(this->window)).x<<" "<<sf::Mouse::getPosition(*(this->window)).y<<'\n';
+            }
+        }
+        window->draw(sp);
+        draw();
+        this->window->display();
     }
 }

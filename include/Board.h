@@ -8,11 +8,12 @@ class Board
     int pieCount[2];
     char turn;
     string board[8][8];
+    sf::RenderWindow *window;
     BasePies *Pies[2][16];
     BasePies *selectedPiece;
     vector<Action> Actions;
     vector<Move> avMoves;
-    Board(const string brd[8][8]);
+    Board(const string brd[8][8],sf::RenderWindow *window);
     bool dMode(int color,int step=1);
     bool mMode(int color,int step=1);
     void addPie(BasePies *pie);
@@ -27,7 +28,9 @@ class Board
     bool isInCheck(int color);
     bool isCheckmate(int color);
     void loadTextures();
-    void draw(sf::RenderWindow *window);
+    void draw();
     Pos findPos(sf::Vector2f position);
     void touchHandle(sf::Vector2f position);
+    void init();
+    void run();
 };
