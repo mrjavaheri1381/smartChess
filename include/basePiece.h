@@ -8,7 +8,7 @@ class BasePies{
         int number,color;
         string name;
         Pos pos;
-        BasePies(int x=-1 , int y=-1 ,int color=0 ,char type='-');
+        BasePies(int x=-1 , int y=-1 ,int color=-1 ,char type='-');
         bool isClearHorizontal(string[8][8] ,Pos );
         bool isClearVertical(string[8][8] ,Pos );
         bool isClearDiagonal(string[8][8] ,Pos );

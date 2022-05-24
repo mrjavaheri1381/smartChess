@@ -23,7 +23,7 @@ class Board
     void MovePie(BasePies *piece,Pos target,char type='N');
     void Undo();
     BasePies* getKing(int color);
-    int getByPos(int x,int y);
+    int getByPos(int x,int y,char color);
     vector<Move> getValidMoves(BasePies *piece);
     bool isInCheck(int color);
     bool isCheckmate(int color);

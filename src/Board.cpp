@@ -166,7 +166,6 @@ void Board::addPie(BasePies *pie){
     Pies[pie->color][pieCount[pie->color]]=pie;
     pieCount[pie->color]++;
   }
-  board[pie->pos.x][pie->pos.y]=pie->name;
 }
 string Board::convertPos(Pos pos){
   string res="a0";
@@ -186,7 +185,7 @@ bool Board::isValidMove(BasePies *piece,Move move){
 void Board::MovePie(BasePies *piece,Pos target,char type){
   if(target.x!=-1&&board[target.x][target.y]!="--"){
     int color=board[target.x][target.y][1]=='W'?0:1;
-    BasePies *pie=Pies[color][getByPos(target.x,target.y)];
+    BasePies *pie=Pies[color][getByPos(target.x,target.y,board[target.x][target.y][1])];
     Pos tr={-1,-1};
     MovePie(pie,tr);
   }
@@ -210,9 +209,10 @@ BasePies* Board::getKing(int color){
     if(Pies[color][i]->pieType=='K') return Pies[color][i];
   return new BasePies();
 }
-int Board::getByPos(int x,int y){
-  for(int i=0;i<pieCount[0];i++)
-    if((Pies[0][i]->pos.x==x&&Pies[0][i]->pos.y==y)||(Pies[1][i]->pos.x==x&&Pies[1][i]->pos.y==y)) return i;
+int Board::getByPos(int x,int y,char color){
+  int cl=color=='W'?0:1;
+  for(int i=0;i<pieCount[cl];i++)
+    if((Pies[cl][i]->pos.x==x&&Pies[cl][i]->pos.y==y)) return i;
   return 0;
 }
 vector<Move> Board::getValidMoves(BasePies *piece){
@@ -238,40 +238,52 @@ bool Board::isCheckmate(int color){
     if(getValidMoves(Pies[color][i]).size()!=0)return false;
   return true;
 }
-
 void Board::loadTextures(){
-  for(int i=0;i<8;i++)
-    for(int j=0;j<8;j++)
-      if(board[i][j]!="--")
-        if(textures.find(board[i][j])==textures.end())
-          textures[board[i][j]].loadFromFile(getPath(board[i][j]));
+  // for(int i=0;i<8;i++)
+  //   for(int j=0;j<8;j++)
+  //     if(board[i][j]!="--")
+  //       if(textures.find(board[i][j])==textures.end()){
+  //         string key=board[i][j];
+  //         key.resize(2);
+  //         textures[key].loadFromFile(getPath(key));
+  //       }
+  for(int i=0;i<2;i++)
+    for(int j=0;j<pieCount[i];j++){
+      string key=Pies[i][j]->name;
+      key.resize(2);
+      textures[key].loadFromFile(getPath(key));
+    }
 }
 using namespace sf;
+Pos getIndex(int x,int y){
+ int i=(y-65)/135,j=(x-65)/135;
+ Pos res={i,j};
+ return res;
+}
 void Board::draw(){
   sf::Sprite piece;
-  CircleShape Circle(20);
-  window->draw(Circle);
-  for(int i=0;i<8;i++){
-      for(int j=0;j<8;j++){
-          if(board[j][i]!="--"){
-              Texture pie;
-              cout<<board[i][j]<<endl;
-              pie.loadFromFile(getPath(board[i][j]));
-              piece.setTexture(pie);
-              piece.setScale(0.2,0.1);
-              piece.setTexture(textures[board[j][i]]);
-              if(board[j][i][0]!='P')
-                  piece.setPosition(80+i*135,80+j*135);
-              else
-                  piece.setPosition(95+i*135,80+j*135);
-              window->draw(piece);
-          }
+  piece.setTexture(textures["KW"]);
+  piece.setScale(0,0);
+  window->draw(piece);
+  RectangleShape rectangle(sf::Vector2f(135, 135));
+  rectangle.setPosition(200,200);
+  window->draw(rectangle);
+  for(int i=0;i<2;i++){
+      for(int j=0;j<pieCount[i];j++){
+        string key=Pies[i][j]->name;
+        key.resize(2);
+        piece.setTexture(textures[key]);
+        piece.setScale(0.25,0.25);
+        if(key[0]!='P')
+            piece.setPosition(80+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
+        else
+            piece.setPosition(95+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
+        window->draw(piece);
       }
     }
 }
 void Board::run(){
-  loadTextures();
-
+    loadTextures();
     sf::Sprite sp;
     sf::Texture tx;
     tx.loadFromFile("resources/images/board.png");
@@ -279,12 +291,14 @@ void Board::run(){
     sp.setScale(1.6,1.6);
     while (this->window->isOpen()) {
         sf::Event event;
-        while (this->window->pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
-                this->window->close();
+        if (this->window->pollEvent(event)) {
+            if (event.type == Event::Closed) {
+                window->close();
             }
-            if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-                cout<<sf::Mouse::getPosition(*(this->window)).x<<" "<<sf::Mouse::getPosition(*(this->window)).y<<'\n';
+            if (Mouse::isButtonPressed(Mouse::Left)) {
+                Pos ps=getIndex(Mouse::getPosition(*(this->window)).x,Mouse::getPosition(*(this->window)).y);
+                cout<<ps.x<<" "<<ps.y<<"\n";
+                // cout<<"salam";
             }
         }
         window->draw(sp);
