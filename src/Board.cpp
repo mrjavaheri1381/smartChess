@@ -239,6 +239,7 @@ bool Board::isInMoves(Pos target){
 }
 
 void Board::touchHandle(int x,int y){
+  if(isPlaying)
   for(int i=0;i<2;i++){
     if(isCheckmate(i)){
       isPlaying=false;
@@ -251,6 +252,7 @@ void Board::touchHandle(int x,int y){
     if(y>30&&y<130&&Actions.size()>0){
       Undo();
       changeTurn();
+      isPlaying=true;
       return;
     }
     if(y>1085&&y<1175){
@@ -374,7 +376,6 @@ void Board::run(){
             if (event.type == sf::Event::MouseButtonPressed)
                 if (event.mouseButton.button == sf::Mouse::Left && lock_click != true){
                     touchHandle(Mouse::getPosition(*(this->window)).y,Mouse::getPosition(*(this->window)).x);
-                    cout<<Mouse::getPosition(*(this->window)).x<<"\n";
                     lock_click = true; 
                 }   
             if (event.type == sf::Event::MouseButtonReleased)
