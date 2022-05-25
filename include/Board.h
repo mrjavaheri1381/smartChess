@@ -14,11 +14,9 @@ class Board
     vector<Action> Actions;
     vector<Move> avMoves;
     Board(const string brd[8][8],sf::RenderWindow *window);
-    bool dMode(int color,int step=1);
-    bool mMode(int color,int step=1);
+    bool dMode(Move move,int color,int step=1);
+    bool mMode(Move move,int color,int step=1);
     void addPie(BasePies *pie);
-    string convertPos(Pos pos);
-    string convertMove(BasePies *pie,Move move);
     bool isValidMove(BasePies *piece,Move move);
     void MovePie(BasePies *piece,Pos target,char type='N');
     void Undo();
@@ -29,6 +27,7 @@ class Board
     bool isCheckmate(int color);
     void loadTextures();
     void draw();
+    void changeTurn();
     Pos findPos(sf::Vector2f position);
     void touchHandle(int x,int y);
     void init();
