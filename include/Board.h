@@ -6,7 +6,7 @@ class Board
 {
   public:
     int pieCount[2];
-    char turn;
+    char turn='W';
     string board[8][8];
     sf::RenderWindow *window;
     BasePies *Pies[2][16];
@@ -30,7 +30,7 @@ class Board
     void loadTextures();
     void draw();
     Pos findPos(sf::Vector2f position);
-    void touchHandle(sf::Vector2f position);
+    void touchHandle(int x,int y);
     void init();
     void run();
 };

@@ -239,14 +239,6 @@ bool Board::isCheckmate(int color){
   return true;
 }
 void Board::loadTextures(){
-  // for(int i=0;i<8;i++)
-  //   for(int j=0;j<8;j++)
-  //     if(board[i][j]!="--")
-  //       if(textures.find(board[i][j])==textures.end()){
-  //         string key=board[i][j];
-  //         key.resize(2);
-  //         textures[key].loadFromFile(getPath(key));
-  //       }
   for(int i=0;i<2;i++)
     for(int j=0;j<pieCount[i];j++){
       string key=Pies[i][j]->name;
@@ -256,18 +248,37 @@ void Board::loadTextures(){
 }
 using namespace sf;
 Pos getIndex(int x,int y){
- int i=(y-65)/135,j=(x-65)/135;
- Pos res={i,j};
- return res;
+  int i=(y-65)/135,j=(x-65)/135;
+  Pos res={i,j};
+  return res;
+}
+void Board::touchHandle(int x,int y){
+
+  if(x<1140&&x>65&&y<1140&&y>65||1){
+    Pos index = getIndex(x,y);
+    string temp=board[index.y][index.x];
+    temp.resize(2);
+    if(temp[1]!=turn){
+    selectedPiece=0;
+    }
+    else{
+      int color=temp[1]=='W'?0:1;
+      int i=getByPos(index.y,index.x,temp[1]);
+      selectedPiece=Pies[color][i];
+    }
+  }
 }
 void Board::draw(){
   sf::Sprite piece;
   piece.setTexture(textures["KW"]);
   piece.setScale(0,0);
   window->draw(piece);
-  RectangleShape rectangle(sf::Vector2f(135, 135));
-  rectangle.setPosition(200,200);
-  window->draw(rectangle);
+  if(selectedPiece!=0){
+    RectangleShape rectangle(Vector2f(135, 135));
+    rectangle.setFillColor(Color(12,222,12));
+    rectangle.setPosition(65+selectedPiece->pos.y*135,65+selectedPiece->pos.x*135);
+    window->draw(rectangle);
+  }
   for(int i=0;i<2;i++){
       for(int j=0;j<pieCount[i];j++){
         string key=Pies[i][j]->name;
@@ -291,14 +302,12 @@ void Board::run(){
     sp.setScale(1.6,1.6);
     while (this->window->isOpen()) {
         sf::Event event;
-        if (this->window->pollEvent(event)) {
+        while (this->window->pollEvent(event)) {
             if (event.type == Event::Closed) {
                 window->close();
             }
             if (Mouse::isButtonPressed(Mouse::Left)) {
-                Pos ps=getIndex(Mouse::getPosition(*(this->window)).x,Mouse::getPosition(*(this->window)).y);
-                cout<<ps.x<<" "<<ps.y<<"\n";
-                // cout<<"salam";
+                touchHandle(Mouse::getPosition(*(this->window)).y,Mouse::getPosition(*(this->window)).x);
             }
         }
         window->draw(sp);
