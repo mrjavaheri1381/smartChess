@@ -7,8 +7,11 @@ class Board
   public:
     int pieCount[2];
     char turn='W';
+    bool isPlaying=true,restart=false;
     string board[8][8];
     sf::RenderWindow *window;
+    sf::Font font;
+    sf::Text winner;
     BasePies *Pies[2][16];
     BasePies *selectedPiece;
     vector<Action> Actions;
@@ -32,4 +35,5 @@ class Board
     void touchHandle(int x,int y);
     void init();
     void run();
+    bool isInMoves(Pos target);
 };

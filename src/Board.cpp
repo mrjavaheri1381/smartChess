@@ -215,6 +215,9 @@ bool Board::isCheckmate(int color){
 void Board::loadTextures(){
   textures["dMode"].loadFromFile("resources/images/warning.png");
   textures["mMode"].loadFromFile("resources/images/badge.png");
+  textures["undo"].loadFromFile("resources/images/undo.png");
+  textures["restart"].loadFromFile("resources/images/restart.png");
+  textures["win"].loadFromFile("resources/images/win.png");
   for(int i=0;i<2;i++)
     for(int j=0;j<pieCount[i];j++){
       string key=Pies[i][j]->name;
@@ -229,21 +232,52 @@ Pos getIndex(int x,int y){
   return res;
 }
 
-void Board::touchHandle(int x,int y){
+bool Board::isInMoves(Pos target){
+  for(int i=0;i<avMoves.size();i++)
+    if(avMoves[i].to.x==target.x&&avMoves[i].to.y==target.y) return true;
+  return false;
+}
 
+void Board::touchHandle(int x,int y){
+  for(int i=0;i<2;i++){
+    if(isCheckmate(i)){
+      isPlaying=false;
+      string temp=i==0?"Black":"White";
+      winner.setString(temp+" Win!");
+      return;
+    }
+  }
+  if(x>1200){
+    if(y>30&&y<130&&Actions.size()>0){
+      Undo();
+      changeTurn();
+      return;
+    }
+    if(y>1085&&y<1175){
+      restart=true;
+      return;
+    }
+  }
+  if(!isPlaying)return;
   if(x<1140&&x>65&&y<1140&&y>65||1){
-    Pos index = getIndex(x,y);
-    string temp=board[index.y][index.x];
-    if(temp[1]!=turn||(selectedPiece&&selectedPiece->pos.x==index.y&&selectedPiece->pos.y==index.x)){
+    Pos index = getIndex(y,x);
+    string temp=board[index.x][index.y];
+    if(isInMoves(index)){
+      MovePie(selectedPiece,index);
+      selectedPiece=0;
+      avMoves.clear();
+      changeTurn();
+      return;
+    }
+    if(temp[1]!=turn||(selectedPiece&&selectedPiece->pos.x==index.x&&selectedPiece->pos.y==index.y)){
       selectedPiece=0;
       avMoves.clear();
     }
     else {
       int color=temp[1]=='W'?0:1;
-      int i=getByPos(index.y,index.x,temp[1]);
+      int i=getByPos(index.x,index.y,temp[1]);
       selectedPiece=Pies[color][i];
       avMoves=getValidMoves(selectedPiece);
-      cout<<avMoves.size()<<'\n';
     }
   }
 }
@@ -279,31 +313,58 @@ void Board::draw(){
   }
   for(int i=0;i<2;i++){
       for(int j=0;j<pieCount[i];j++){
+        if(Pies[i][j]->pos.x==-1)continue;
         string key=Pies[i][j]->name;
         key.resize(2);
         piece.setTexture(textures[key]);
-        if(selectedPiece&&(selectedPiece->isValidMove(board,Pies[i][j]->pos)&&Pies[i][j]->color!=selectedPiece->color))
+        if(selectedPiece&&isInMoves(Pies[i][j]->pos)||(Pies[i][j]->name[0]=='K'&&isInCheck(i)))
           piece.setColor(Color::Red);
         else piece.setColor(Color::White);
         piece.setScale(0.25,0.25);
         if(key[0]!='P')
             piece.setPosition(80+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
-        else
+        else{
             piece.setPosition(95+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
+        }
         window->draw(piece);
       }
+    }
+    CircleShape trn(50);
+    trn.setPosition(550,1215);
+    trn.setFillColor(turn=='W'?Color::White:Color::Black);
+    window->draw(trn);
+    Sprite undo(textures["undo"]);
+    Sprite restart(textures["restart"]);
+    undo.setPosition(30,1210);
+    undo.setScale(0.8,0.8);
+    restart.setPosition(1080,1210);
+    restart.setScale(0.8,0.8);
+    if(Actions.size()>0)
+      window->draw(undo);
+    window->draw(restart);
+    if(!isPlaying){
+      Sprite win(textures["win"]);
+      win.setPosition(350,300);
+      window->draw(win);
+      window->draw(winner);
     }
 }
 
 void Board::run(){
     loadTextures();
+    font.loadFromFile("resources/fonts/roboto.ttf");
+    winner.setFont(font);
+    winner.setCharacterSize(100);
+    winner.setStyle(sf::Text::Regular);
+    winner.setFillColor(sf::Color::Black);
+    winner.setPosition(400, 800);
     selectedPiece=0;
     sf::Sprite sp;
     sf::Texture tx;
     tx.loadFromFile("resources/images/board.png");
     sp.setTexture(tx);
     sp.setScale(1.6,1.6);
-    while (this->window->isOpen()) {
+    while (this->window->isOpen()&&!restart) {
         sf::Event event;
         while (this->window->pollEvent(event)) {
             if (event.type == Event::Closed) {
@@ -313,12 +374,14 @@ void Board::run(){
             if (event.type == sf::Event::MouseButtonPressed)
                 if (event.mouseButton.button == sf::Mouse::Left && lock_click != true){
                     touchHandle(Mouse::getPosition(*(this->window)).y,Mouse::getPosition(*(this->window)).x);
+                    cout<<Mouse::getPosition(*(this->window)).x<<"\n";
                     lock_click = true; 
                 }   
             if (event.type == sf::Event::MouseButtonReleased)
                 if (event.mouseButton.button == sf::Mouse::Left) 
                     lock_click = false;
       }
+        window->clear(Color(202,174,152));
         window->draw(sp);
         draw();
         this->window->display();
