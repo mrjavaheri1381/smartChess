@@ -1,5 +1,6 @@
 #include "Board.h"
 using namespace std;
+using namespace sf;
 map<string, sf::Texture> textures;
 
 Board::Board(const string brd[8][8],sf::RenderWindow *_window){
@@ -212,6 +213,8 @@ bool Board::isCheckmate(int color){
 }
 
 void Board::loadTextures(){
+  textures["dMode"].loadFromFile("resources/images/warning.png");
+  textures["mMode"].loadFromFile("resources/images/badge.png");
   for(int i=0;i<2;i++)
     for(int j=0;j<pieCount[i];j++){
       string key=Pies[i][j]->name;
@@ -219,8 +222,6 @@ void Board::loadTextures(){
       textures[key].loadFromFile(getPath(key));
     }
 }
-
-using namespace sf;
 
 Pos getIndex(int x,int y){
   int i=(y-65)/135,j=(x-65)/135;
@@ -263,6 +264,18 @@ void Board::draw(){
     circle.setFillColor(Color(108,117,125));
     circle.setPosition(110+avMoves[i].to.y*135,110+avMoves[i].to.x*135);
     window->draw(circle);
+    if(dMode(avMoves[i],turn=='W'?0:1)){
+      Sprite emerg(textures["dMode"]);
+      emerg.setPosition(70+avMoves[i].to.y*135,70+avMoves[i].to.x*135);
+      emerg.setScale(0.5,0.5);
+      window->draw(emerg);
+    }
+    if(mMode(avMoves[i],turn=='W'?0:1)){
+      Sprite emerg(textures["mMode"]);
+      emerg.setPosition(70+avMoves[i].to.y*135,70+avMoves[i].to.x*135);
+      emerg.setScale(0.5,0.5);
+      window->draw(emerg);
+    }
   }
   for(int i=0;i<2;i++){
       for(int j=0;j<pieCount[i];j++){
