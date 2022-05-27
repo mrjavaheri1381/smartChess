@@ -252,6 +252,8 @@ void Board::touchHandle(int x,int y){
     if(y>30&&y<130&&Actions.size()>0){
       Undo();
       changeTurn();
+      selectedPiece=0;
+      avMoves.clear();
       isPlaying=true;
       return;
     }
