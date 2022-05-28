@@ -8,6 +8,7 @@ class BasePies{
         int number,color;
         string name;
         Pos pos;
+        Pos animated={-1,-1};
         BasePies(int x=-1 , int y=-1 ,int color=-1 ,char type='-');
         bool isClearHorizontal(string[8][8] ,Pos );
         bool isClearVertical(string[8][8] ,Pos );
