@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <Board.h>
+#include <Selector.h>
 
 using namespace sf;
 
@@ -11,13 +12,21 @@ int main()
     cout<<"Select Input type:\n-A:Clipboard\n-B:In console\n:";
     istringstream clipBoard(sf::Clipboard::getString());
     cin>>type;
-    for(int i=0;i<8;i++)
-        for(int j=0;j<8;j++){
-            if(type=='A')clipBoard >> board[i][j];
-            if(type=='B')cin >> board[i][j];
-        }
+    if(type!='C'){
+        for(int i=0;i<8;i++)
+            for(int j=0;j<8;j++){
+                if(type=='A')clipBoard >> board[i][j];
+                if(type=='B')cin >> board[i][j];
+            }
+    }
+    else{
+        RenderWindow window(VideoMode(1200, 1330), "Java's Chess", Style::Titlebar | Style::Close);
+        window.setFramerateLimit(20);
+        Selector selector(&window);
+        selector.run(board);
+    }
     RenderWindow window(VideoMode(1200, 1330), "Java's Chess", Style::Titlebar | Style::Close);
-    window.setFramerateLimit(100);
+    window.setFramerateLimit(20);
     while(window.isOpen()){
         Board Chess(board,&window);
         Chess.run();

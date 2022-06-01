@@ -1,5 +1,6 @@
 #pragma once
 #include "Pieces.h"
+#include "Helper.h"
 #include <SFML/Graphics.hpp>
 using namespace std;
 class Board
@@ -28,7 +29,6 @@ class Board
     vector<Move> getValidMoves(BasePies *piece);
     bool isInCheck(int color);
     bool isCheckmate(int color);
-    void loadTextures();
     void draw();
     void changeTurn();
     Pos findPos(sf::Vector2f position);

@@ -10,6 +10,7 @@ set(SOURCES
     ${SRC_DIRECTORY}/basePiece.cpp
     ${SRC_DIRECTORY}/Pieces.cpp
     ${SRC_DIRECTORY}/Board.cpp
+    ${SRC_DIRECTORY}/Selector.cpp
     ${SRC_DIRECTORY}/Helper.cpp
 )
 

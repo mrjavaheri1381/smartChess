@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mrjavaheri/Desktop/smartChess/src/Board.cpp" "CMakeFiles/smartChess.dir/src/Board.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/Board.cpp.o.d"
   "/Users/mrjavaheri/Desktop/smartChess/src/Helper.cpp" "CMakeFiles/smartChess.dir/src/Helper.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/Helper.cpp.o.d"
   "/Users/mrjavaheri/Desktop/smartChess/src/Pieces.cpp" "CMakeFiles/smartChess.dir/src/Pieces.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/Pieces.cpp.o.d"
+  "/Users/mrjavaheri/Desktop/smartChess/src/Selector.cpp" "CMakeFiles/smartChess.dir/src/Selector.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/Selector.cpp.o.d"
   "/Users/mrjavaheri/Desktop/smartChess/src/basePiece.cpp" "CMakeFiles/smartChess.dir/src/basePiece.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/basePiece.cpp.o.d"
   "/Users/mrjavaheri/Desktop/smartChess/src/main.cpp" "CMakeFiles/smartChess.dir/src/main.cpp.o" "gcc" "CMakeFiles/smartChess.dir/src/main.cpp.o.d"
   )

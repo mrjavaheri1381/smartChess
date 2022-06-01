@@ -201,6 +201,30 @@ src/Pieces.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Pieces.cpp.s
 .PHONY : src/Pieces.cpp.s
 
+src/Selector.o: src/Selector.cpp.o
+.PHONY : src/Selector.o
+
+# target to build an object file
+src/Selector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Selector.cpp.o
+.PHONY : src/Selector.cpp.o
+
+src/Selector.i: src/Selector.cpp.i
+.PHONY : src/Selector.i
+
+# target to preprocess a source file
+src/Selector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Selector.cpp.i
+.PHONY : src/Selector.cpp.i
+
+src/Selector.s: src/Selector.cpp.s
+.PHONY : src/Selector.s
+
+# target to generate assembly for a file
+src/Selector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartChess.dir/build.make CMakeFiles/smartChess.dir/src/Selector.cpp.s
+.PHONY : src/Selector.cpp.s
+
 src/basePiece.o: src/basePiece.cpp.o
 .PHONY : src/basePiece.o
 
@@ -267,6 +291,9 @@ help:
 	@echo "... src/Pieces.o"
 	@echo "... src/Pieces.i"
 	@echo "... src/Pieces.s"
+	@echo "... src/Selector.o"
+	@echo "... src/Selector.i"
+	@echo "... src/Selector.s"
 	@echo "... src/basePiece.o"
 	@echo "... src/basePiece.i"
 	@echo "... src/basePiece.s"
