@@ -3,6 +3,7 @@
 #include "Helper.h"
 #include <SFML/Graphics.hpp>
 using namespace std;
+std::map<std::string, sf::Texture> textures;
 class Board
 {
   public:

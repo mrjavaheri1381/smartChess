@@ -7,11 +7,11 @@ set(SRC_DIRECTORY src)
 set(INCLUDE_DIRECTORY include)
 
 set(SOURCES
+    ${SRC_DIRECTORY}/Helper.cpp
     ${SRC_DIRECTORY}/basePiece.cpp
     ${SRC_DIRECTORY}/Pieces.cpp
     ${SRC_DIRECTORY}/Board.cpp
     ${SRC_DIRECTORY}/Selector.cpp
-    ${SRC_DIRECTORY}/Helper.cpp
 )
 
 include_directories(${INCLUDE_DIRECTORY})

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <Helper.h>
+#include <Board.h>
 #include <SFML/Graphics.hpp>
 using namespace std;
 class Selector

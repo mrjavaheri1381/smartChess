@@ -2003,7 +2003,11 @@ CMakeFiles/smartChess.dir/src/Selector.cpp.o: src/Selector.cpp \
   /usr/local/include/SFML/Graphics/Glsl.inl \
   /usr/local/include/SFML/Graphics/Sprite.hpp \
   /usr/local/include/SFML/Graphics/Text.hpp \
-  /usr/local/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+  include/Board.h \
+  include/Pieces.h \
+  include/basePiece.h \
+  include/data.h
 
 CMakeFiles/smartChess.dir/src/basePiece.cpp.o: src/basePiece.cpp \
   include/basePiece.h \
