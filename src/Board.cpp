@@ -2,9 +2,12 @@
 using namespace std;
 using namespace sf;
 
+std::map<std::string, sf::Texture> textures;
+
 Board::Board(const string brd[8][8],sf::RenderWindow *_window){
   window=_window;
   pieCount[0]=pieCount[1]=0;
+
   for(int i=0;i<8;i++)
     for(int j=0;j<8;j++){
       string temp=brd[i][j];
@@ -212,7 +215,7 @@ bool Board::isCheckmate(int color){
   return true;
 }
 
-Pos getIndex(int x,int y){
+Pos Board::getIndex(int x,int y){
   int i=(y-65)/135,j=(x-65)/135;
   Pos res={i,j};
   return res;
@@ -249,7 +252,7 @@ void Board::touchHandle(int x,int y){
     }
   }
   if(!isPlaying)return;
-  if(x<1140&&x>65&&y<1140&&y>65||1){
+  if(x<1140&&x>65&&y<1140&&y>65){
     Pos index = getIndex(y,x);
     string temp=board[index.x][index.y];
     if(isInMoves(index)){
@@ -340,8 +343,22 @@ void Board::draw(){
       window->draw(winner);
     }
 }
+void Board::loadTextures(){
+  textures["dMode"].loadFromFile("resources/images/warning.png");
+  textures["mMode"].loadFromFile("resources/images/badge.png");
+  textures["undo"].loadFromFile("resources/images/undo.png");
+  textures["restart"].loadFromFile("resources/images/restart.png");
+  textures["win"].loadFromFile("resources/images/win.png");
+  for(int i=0;i<2;i++)
+    for(int j=0;j<pieCount[i];j++){
+      string key=Pies[i][j]->name;
+      key.resize(2);
+      textures[key].loadFromFile(getPath(key));
+    }
+}
 
 void Board::run(){
+    loadTextures();
     font.loadFromFile("resources/fonts/roboto.ttf");
     winner.setFont(font);
     winner.setCharacterSize(100);

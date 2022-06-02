@@ -3,7 +3,6 @@
 #include "Helper.h"
 #include <SFML/Graphics.hpp>
 using namespace std;
-std::map<std::string, sf::Texture> textures;
 class Board
 {
   public:
@@ -34,7 +33,9 @@ class Board
     void changeTurn();
     Pos findPos(sf::Vector2f position);
     void touchHandle(int x,int y);
-    void init();
     void run();
     bool isInMoves(Pos target);
+    void loadTextures();
+    Pos getIndex(int x,int y);
+
 };

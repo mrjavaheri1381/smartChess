@@ -1,8 +1,9 @@
-#ifndef DATA_H
-#define DATA_H
+#pragma once
+
 #include <vector>
 #include <string>
 #include <iostream>
+
 struct Pos {
     int x,y;
 };
@@ -14,4 +15,3 @@ struct Action{
     int color,number;
 };
 
-#endif

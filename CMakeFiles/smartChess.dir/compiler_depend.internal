@@ -2008,9 +2008,6 @@ CMakeFiles/smartChess.dir/src/Selector.cpp.o
  /usr/local/include/SFML/Graphics/Sprite.hpp
  /usr/local/include/SFML/Graphics/Text.hpp
  /usr/local/include/SFML/Graphics/VertexBuffer.hpp
- /Users/mrjavaheri/Desktop/smartChess/include/Board.h
- /Users/mrjavaheri/Desktop/smartChess/include/Pieces.h
- /Users/mrjavaheri/Desktop/smartChess/include/basePiece.h
  /Users/mrjavaheri/Desktop/smartChess/include/data.h
 
 CMakeFiles/smartChess.dir/src/basePiece.cpp.o
