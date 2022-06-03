@@ -158,7 +158,6 @@ void Board::MovePie(BasePies *piece,Pos target,char type){
   Action action={move,piece->color,piece->number};
   if(type!='B')Actions.push_back(action);
   if(piece->pos.x!=-1)board[piece->pos.x][piece->pos.y]="--";
-  piece->animated=piece->pos;
   piece->pos=target;
   if(target.x!=-1)board[target.x][target.y]=piece->name;
 }
@@ -256,6 +255,9 @@ void Board::touchHandle(int x,int y){
     Pos index = getIndex(y,x);
     string temp=board[index.x][index.y];
     if(isInMoves(index)){
+      selectedPiece->stepX=float((index.x-selectedPiece->pos.x)/50.f)*135.f;
+      selectedPiece->stepY=float((index.y-selectedPiece->pos.y)/50.f)*135.f;
+      selectedPiece->animationStep=50;
       MovePie(selectedPiece,index);
       selectedPiece=0;
       avMoves.clear();
@@ -314,11 +316,15 @@ void Board::draw(){
           piece.setColor(Color::Red);
         else piece.setColor(Color::White);
         piece.setScale(0.25,0.25);
+        if(Pies[i][j]->animationStep>0)Pies[i][j]->animationStep--;
+        float x=-Pies[i][j]->stepY * Pies[i][j]->animationStep+80.f + Pies[i][j]->pos.y*135.f;
+        float y=-Pies[i][j]->stepX * Pies[i][j]->animationStep+80.f + Pies[i][j]->pos.x*135.f;
+        // cout<<-Pies[i][j]->stepY * Pies[i][j]->animationStep<<'\n';
         if(key[0]!='P'){
-            piece.setPosition(80+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
+            piece.setPosition(x,y);
         }
         else{
-            piece.setPosition(95+Pies[i][j]->pos.y*135,80+Pies[i][j]->pos.x*135);
+            piece.setPosition(x + 15.f,y);
         }
         window->draw(piece);
       }

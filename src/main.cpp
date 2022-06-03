@@ -29,7 +29,7 @@ int main()
         selector.run(board);
     }
     RenderWindow window(VideoMode(1200, 1330), "Java's Chess", Style::Titlebar | Style::Close);
-    window.setFramerateLimit(20);
+    window.setFramerateLimit(90);
     while(window.isOpen()){
         Board Chess(board,&window);
         Chess.run();
