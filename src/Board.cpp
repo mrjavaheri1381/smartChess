@@ -319,7 +319,6 @@ void Board::draw(){
         if(Pies[i][j]->animationStep>0)Pies[i][j]->animationStep--;
         float x=-Pies[i][j]->stepY * Pies[i][j]->animationStep+80.f + Pies[i][j]->pos.y*135.f;
         float y=-Pies[i][j]->stepX * Pies[i][j]->animationStep+80.f + Pies[i][j]->pos.x*135.f;
-        // cout<<-Pies[i][j]->stepY * Pies[i][j]->animationStep<<'\n';
         if(key[0]!='P'){
             piece.setPosition(x,y);
         }
